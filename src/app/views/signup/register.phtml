@@ -1,0 +1,10 @@
+<div class="alert alert-<?php echo $success === true ? 'success' : 'danger'; ?>">
+    <?php echo $message; ?>
+</div>
+
+<<<<<<< HEAD
+<?php echo $this->tag->linkTo(['/', 'Go back', 'class' => 'btn btn-primary']); ?>
+=======
+<?php echo $this->tag->linkTo(['/signup', 'Go back', 'class' => 'btn btn-primary']); ?>
+<?php if( $success === true) echo $this->tag->linkTo(['/login', 'Go to Login', 'class' => 'btn btn-primary']); ?>
+>>>>>>> 1a09beea60cd09eb9c42fa664d3ffcfe7816e1df

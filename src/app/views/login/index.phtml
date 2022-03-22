@@ -1,0 +1,54 @@
+<<<<<<< HEAD
+<?php
+// session_start(); 
+?>
+<html>
+=======
+<!-- <html>
+>>>>>>> 1a09beea60cd09eb9c42fa664d3ffcfe7816e1df
+    <body>
+        <h2>
+            Do login
+        </h2>
+<<<<<<< HEAD
+        <form action="login/random" method="POST">
+            <label> Username <input type="text" placeholder="Username..." name="username"></label><br>
+            <label> Password <input type="text" placeholder="Password..." name="password"></label><br>
+            <input type="submit" name="submit" value="Login">
+        </form>
+    </body>
+</html>
+=======
+    </body>
+</html> -->
+<h2>Login using this form</h2>
+
+<?php echo $this->tag->form("login/register"); ?>
+
+   
+    <p>
+        <label for="email">E-Mail</label>
+        <?php echo $this->tag->textField("email"); ?>
+    </p>
+
+    <p>
+        <label for="password">Password</label>
+        <?php echo $this->tag->textField("password"); ?>
+    </p>
+ 
+
+    <p>
+        <?php echo $this->tag->submitButton("Login"); ?>
+    </p>
+
+    <?php
+    echo $this->tag->linkTo(
+        'signup',
+        'Signup Here !'
+    );?>
+
+
+</form>
+
+
+>>>>>>> 1a09beea60cd09eb9c42fa664d3ffcfe7816e1df
